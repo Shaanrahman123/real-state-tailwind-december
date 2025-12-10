@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – Elysian Estates</title>
+  <link rel="icon"
+    href="https://www.codewithfaraz.com/tools/placeholder?size=32x32&bgColor=FDFDFB&textColor=1A1A1A&text=EE"
+    type="image/png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Lucide -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="top" class="antialiased">
+
+  <!-- Scroll Indicator -->
+  <div id="scroll-indicator" style="width: 0%;"></div>
+
+  <!-- Header -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
+    <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" class="font-display text-3xl font-bold text-ivory tracking-wide" id="logo">
+        Elysian
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex space-x-8 items-center">
+        <a href="index.html"
+          class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Home</a>
+        <a href="projects.html"
+          class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Projects</a>
+        <a href="agents.html"
+          class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Agents</a>
+        <a href="about-us.html" class="text-soft-gold font-semibold nav-link-desktop">About</a>
+        <a href="blog.html"
+          class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Blog</a>
+        <a href="contact.html"
+          class="bg-ivory text-charcoal px-6 py-3 rounded-md text-sm font-semibold hover:bg-soft-gold hover:text-charcoal shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+          id="nav-cta-desktop">
+          Contact Us
+        </a>
+      </nav>
+
+      <!-- Placeholder for alignment -->
+      <div class="lg:hidden w-[28px] h-[36px]"></div>
+    </div>
+  </header>
+
+  <!-- Mobile Hamburger -->
+  <button id="hamburger-btn" class="lg:hidden z-[60] hamburger fixed top-5 right-6">
+    <span class="bg-ivory"></span>
+    <span class="bg-ivory"></span>
+    <span class="bg-ivory"></span>
+  </button>
+
+  <!-- Mobile Nav Overlay -->
+  <div id="nav-overlay"
+    class="nav-overlay fixed inset-0 bg-charcoal z-[55] flex flex-col items-center justify-center space-y-10">
+    <a href="index.html" class="text-ivory text-4xl font-display">Home</a>
+    <a href="projects.html" class="text-ivory text-4xl font-display">Projects</a>
+    <a href="agents.html" class="text-ivory text-4xl font-display">Agents</a>
+    <a href="about-us.html" class="text-soft-gold text-4xl font-display">About</a>
+    <a href="blog.html" class="text-ivory text-4xl font-display">Blog</a>
+    <a href="contact.html" class="text-ivory text-4xl font-display">Contact</a>
+  </div>
+
+  <main class="bg-ivory">
+
+    <!-- Hero / Breadcrumb -->
+    <section class="pt-32 pb-16 bg-charcoal text-ivory relative overflow-hidden">
+      <div class="absolute inset-0 opacity-25">
+        <img src="https://images.pexels.com/photos/3137055/pexels-photo-3137055.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          alt="City skyline" class="w-full h-full object-cover">
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/90 to-transparent"></div>
+
+      <div class="container mx-auto px-6 relative z-10">
+        <p class="text-sm uppercase tracking-[0.35em] text-soft-gold mb-4" data-aos="fade-right">
+          Our Story
+        </p>
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-4" data-aos="fade-right"
+          data-aos-delay="80">
+          Redefining luxury real estate.
+        </h1>
+        <p class="max-w-2xl text-ivory/80 text-lg" data-aos="fade-right" data-aos-delay="140">
+          Elysian Estates is a curated collective of advisors, marketers, and storytellers dedicated to presenting the
+          world’s most remarkable homes with rare precision and care.
+        </p>
+        <div class="mt-6 text-sm text-ivory/60" data-aos="fade-right" data-aos-delay="180">
+          <a href="index.html" class="hover:text-soft-gold">Home</a>
+          <span class="mx-2">/</span>
+          <span class="text-soft-gold">About</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Director’s Message ===== -->
+    <section class="py-20 bg-ivory">
+      <div class="container mx-auto px-6 grid lg:grid-cols-[1.2fr,1fr] gap-12 items-center">
+
+        <div data-aos="fade-right">
+          <p class="text-xs uppercase tracking-[0.35em] text-charcoal/60 mb-3">
+            From The Director
+          </p>
+          <h2 class="font-display text-4xl font-bold text-charcoal mb-6">
+            A vision built on trust, restraint, and long-term thinking.
+          </h2>
+
+          <p class="text-charcoal/80 mb-4">
+            When I founded Elysian Estates, I set out to quietly challenge the noise-driven nature of the luxury
+            property
+            market. I believed that extraordinary homes deserved thoughtful representation—not haste, spectacle, or
+            pressure.
+          </p>
+
+          <p class="text-charcoal/80 mb-4">
+            Today, our work spans cities, coastlines, and cultures, but our values remain unchanged: discretion over
+            display,
+            clarity over hype, and relationships over transactions.
+          </p>
+
+          <p class="text-charcoal/80">
+            To those who place their confidence in us, know that we treat every mandate with the same care we would give
+            our
+            own family’s assets.
+          </p>
+
+          <div class="mt-6">
+            <p class="font-display text-lg font-semibold text-charcoal">— Alexander Cole</p>
+            <p class="text-sm text-charcoal/60 uppercase tracking-wider">
+              Managing Director
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="fade-left">
+          <div class="relative max-w-sm mx-auto">
+            <img
+              src="https://images.pexels.com/photos/5598291/pexels-photo-5598291.jpeg?auto=compress&cs=tinysrgb&w=800"
+              class="rounded-3xl shadow-2xl object-cover w-full h-[420px]" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===== Vision & Mission ===== -->
+    <section class="py-20 bg-light-gray">
+      <div class="container mx-auto px-6">
+
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span class="text-soft-gold font-semibold tracking-widest uppercase">Our Direction</span>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-charcoal mt-4">
+            Vision & Mission
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+
+          <!-- Vision -->
+          <div class="bg-white p-8 rounded-2xl shadow-md" data-aos="fade-right">
+            <div class="w-12 h-12 rounded-full bg-light-gray flex items-center justify-center mb-5">
+              <i data-lucide="eye" class="w-6 h-6 text-charcoal"></i>
+            </div>
+            <h3 class="font-display text-2xl font-semibold text-charcoal mb-3">
+              Our Vision
+            </h3>
+            <p class="text-charcoal/80">
+              To be the world’s most trusted name in discreet, design-led real estate representation—quietly shaping the
+              way
+              extraordinary properties are presented, preserved, and passed forward.
+            </p>
+          </div>
+
+          <!-- Mission -->
+          <div class="bg-white p-8 rounded-2xl shadow-md" data-aos="fade-left">
+            <div class="w-12 h-12 rounded-full bg-light-gray flex items-center justify-center mb-5">
+              <i data-lucide="target" class="w-6 h-6 text-charcoal"></i>
+            </div>
+            <h3 class="font-display text-2xl font-semibold text-charcoal mb-3">
+              Our Mission
+            </h3>
+            <p class="text-charcoal/80">
+              To represent every property with precision, integrity, and restraint—guiding clients through decisions
+              that
+              shape legacies, not just transactions.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== Board of Directors ===== -->
+    <section class="py-20 bg-ivory">
+      <div class="container mx-auto px-6">
+
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span class="text-soft-gold font-semibold tracking-widest uppercase">Governance</span>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-charcoal mt-4">
+            Board of Directors
+          </h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+          <div class="text-center group" data-aos="fade-up" data-aos-delay="100">
+            <div class="relative inline-block mb-6">
+              <img
+                src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Elysian%20Real%20Estate%20Template/Kenji Tanaka.png"
+                alt="Portrait of Alexander Cole" class="w-64 h-64 object-cover rounded-full object-top">
+              <div
+                class="absolute inset-0 rounded-full border-2 border-soft-gold/50 scale-105 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:border-soft-gold">
+              </div>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-charcoal">Alexander Cole</h3>
+            <p class="text-soft-gold font-medium mb-3">Founder & Principal Agent</p>
+            <p class="text-charcoal/70 max-w-xs mx-auto mb-4">With two decades of experience, Alexander is a
+              master of the luxury market.</p>
+            <a href="mailto:alexander@elysian.com"
+              class="font-semibold text-charcoal hover:text-soft-gold transition-colors">alexander@elysian.com</a>
+          </div>
+          <!-- director 2 -->
+          <div class="text-center group" data-aos="fade-up" data-aos-delay="200">
+            <div class="relative inline-block mb-6">
+              <img
+                src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Elysian%20Real%20Estate%20Template/Isabella Rossi.png"
+                alt="Portrait of Isabella Chen" class="w-64 h-64 object-cover rounded-full object-top">
+              <div
+                class="absolute inset-0 rounded-full border-2 border-soft-gold/50 scale-105 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:border-soft-gold">
+              </div>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-charcoal">Isabella Chen</h3>
+            <p class="text-soft-gold font-medium mb-3">Senior Partner</p>
+            <p class="text-charcoal/70 max-w-xs mx-auto mb-4">Isabella's global perspective connects
+              discerning clients with their dream homes.</p>
+            <a href="mailto:isabella@elysian.com"
+              class="font-semibold text-charcoal hover:text-soft-gold transition-colors">isabella@elysian.com</a>
+          </div>
+          <!-- director 3 -->
+          <div class="text-center group" data-aos="fade-up" data-aos-delay="300">
+            <div class="relative inline-block mb-6">
+              <img
+                src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Elysian%20Real%20Estate%20Template/Marcus Cole.png"
+                alt="Portrait of Marcus Thorne" class="w-64 h-64 object-cover rounded-full object-top">
+              <div
+                class="absolute inset-0 rounded-full border-2 border-soft-gold/50 scale-105 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:border-soft-gold">
+              </div>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-charcoal">Marcus Thorne</h3>
+            <p class="text-soft-gold font-medium mb-3">Estates Director</p>
+            <p class="text-charcoal/70 max-w-xs mx-auto mb-4">Marcus specializes in architectural
+              masterpieces and historic estates.</p>
+            <a href="mailto:marcus@elysian.com"
+              class="font-semibold text-charcoal hover:text-soft-gold transition-colors">marcus@elysian.com</a>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== Meet Our Team Section ===== -->
+    <section class="py-20 bg-ivory">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span class="text-soft-gold font-semibold tracking-widest uppercase">The Curators</span>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-charcoal mt-4">
+            Meet Our Team
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+          <!-- Agent 1 -->
+          <div class="text-center group" data-aos="fade-up" data-aos-delay="100">
+            <div class="relative inline-block mb-6">
+              <img
+                src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Elysian%20Real%20Estate%20Template/Kenji Tanaka.png"
+                alt="Portrait of Alexander Cole" class="w-64 h-64 object-cover rounded-full object-top">
+              <div
+                class="absolute inset-0 rounded-full border-2 border-soft-gold/50 scale-105 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:border-soft-gold">
+              </div>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-charcoal">Alexander Cole</h3>
+            <p class="text-soft-gold font-medium mb-3">Founder & Principal Agent</p>
+            <p class="text-charcoal/70 max-w-xs mx-auto mb-4">With two decades of experience, Alexander is a
+              master of the luxury market.</p>
+            <a href="mailto:alexander@elysian.com"
+              class="font-semibold text-charcoal hover:text-soft-gold transition-colors">alexander@elysian.com</a>
+          </div>
+          <!-- Agent 2 -->
+          <div class="text-center group" data-aos="fade-up" data-aos-delay="200">
+            <div class="relative inline-block mb-6">
+              <img
+                src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Elysian%20Real%20Estate%20Template/Isabella Rossi.png"
+                alt="Portrait of Isabella Chen" class="w-64 h-64 object-cover rounded-full object-top">
+              <div
+                class="absolute inset-0 rounded-full border-2 border-soft-gold/50 scale-105 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:border-soft-gold">
+              </div>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-charcoal">Isabella Chen</h3>
+            <p class="text-soft-gold font-medium mb-3">Senior Partner</p>
+            <p class="text-charcoal/70 max-w-xs mx-auto mb-4">Isabella's global perspective connects
+              discerning clients with their dream homes.</p>
+            <a href="mailto:isabella@elysian.com"
+              class="font-semibold text-charcoal hover:text-soft-gold transition-colors">isabella@elysian.com</a>
+          </div>
+          <!-- Agent 3 -->
+          <div class="text-center group" data-aos="fade-up" data-aos-delay="300">
+            <div class="relative inline-block mb-6">
+              <img
+                src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Elysian%20Real%20Estate%20Template/Marcus Cole.png"
+                alt="Portrait of Marcus Thorne" class="w-64 h-64 object-cover rounded-full object-top">
+              <div
+                class="absolute inset-0 rounded-full border-2 border-soft-gold/50 scale-105 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:border-soft-gold">
+              </div>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-charcoal">Marcus Thorne</h3>
+            <p class="text-soft-gold font-medium mb-3">Estates Director</p>
+            <p class="text-charcoal/70 max-w-xs mx-auto mb-4">Marcus specializes in architectural
+              masterpieces and historic estates.</p>
+            <a href="mailto:marcus@elysian.com"
+              class="font-semibold text-charcoal hover:text-soft-gold transition-colors">marcus@elysian.com</a>
+          </div>
+          <div class="text-center group" data-aos="fade-up" data-aos-delay="300">
+            <div class="relative inline-block mb-6">
+              <img
+                src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Elysian%20Real%20Estate%20Template/Marcus Cole.png"
+                alt="Portrait of Marcus Thorne" class="w-64 h-64 object-cover rounded-full object-top">
+              <div
+                class="absolute inset-0 rounded-full border-2 border-soft-gold/50 scale-105 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:border-soft-gold">
+              </div>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-charcoal">Marcus Thorne</h3>
+            <p class="text-soft-gold font-medium mb-3">Estates Director</p>
+            <p class="text-charcoal/70 max-w-xs mx-auto mb-4">Marcus specializes in architectural
+              masterpieces and historic estates.</p>
+            <a href="mailto:marcus@elysian.com"
+              class="font-semibold text-charcoal hover:text-soft-gold transition-colors">marcus@elysian.com</a>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="py-16 bg-light-gray">
+      <div class="container mx-auto px-6">
+        <div
+          class="bg-charcoal text-ivory rounded-2xl px-8 py-10 md:px-12 md:py-14 flex flex-col md:flex-row md:items-center md:justify-between gap-8"
+          data-aos="fade-up">
+          <div>
+            <p class="text-xs uppercase tracking-[0.35em] text-soft-gold mb-2">
+              Begin a conversation
+            </p>
+            <h2 class="font-display text-3xl md:text-4xl font-bold mb-3">
+              Let’s quietly explore what’s next for you.
+            </h2>
+            <p class="text-ivory/80 max-w-xl">
+              Whether you’re considering a sale, scouting a new city, or building a long-term portfolio, our team will
+              respond with thoughtful questions—not a sales pitch.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+            <a href="contact.html"
+              class="flex-1 bg-soft-gold text-charcoal font-semibold text-sm tracking-wide px-6 py-3 rounded-md text-center hover:bg-dark-gold transition-all">
+              Arrange a private consultation
+            </a>
+            <a href="tel:+13105550123"
+              class="flex-1 border border-ivory/40 text-ivory font-semibold text-sm tracking-wide px-6 py-3 rounded-md text-center hover:bg-ivory hover:text-charcoal transition-all flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+              Call our team
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-charcoal text-ivory/70 pt-20 pb-10">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <!-- Column 1: Brand & Newsletter -->
+        <div>
+          <h3 class="font-display text-3xl font-bold text-white mb-4">Elysian</h3>
+          <p class="text-sm mb-6 max-w-xs">
+            The new standard in luxury real estate.
+            </S>
+          <h4 class="text-lg font-semibold text-white mb-4">Join Our Newsletter</h4>
+          <form class="flex">
+            <input type="email" placeholder="Your Email"
+              class="w-full bg-ivory/10 text-white px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-soft-gold border-none">
+            <button
+              class="bg-soft-gold text-charcoal px-4 py-2 rounded-r-md font-semibold hover:bg-dark-gold transition-colors">
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-6">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="hover:text-soft-gold transition-colors">Home</a></li>
+            <li><a href="property-listings.html" class="hover:text-soft-gold transition-colors">Properties</a></li>
+            <li><a href="sustanability.html" class="hover:text-soft-gold transition-colors">Sustanability</a></li>
+            <li><a href="corporate-social-responsibility.html" class="hover:text-soft-gold transition-colors">Corporate
+                social Responsibility</a></li>
+            <li><a href="about-us.html" class="hover:text-soft-gold transition-colors">About Us</a></li>
+            <li><a href="testimonial.html" class="hover:text-soft-gold transition-colors">Testimonials</a>
+            </li>
+            <li><a href="blog.html" class="hover:text-soft-gold transition-colors">Blog</a></li>
+            <li><a href="contact.html" class="hover:text-soft-gold transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-6">Contact Us</h4>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <i data-lucide="map-pin" class="w-5 h-5 mr-3 mt-1 text-soft-gold flex-shrink-0"></i>
+              <span>123 Luxury Ave, Beverly Hills, CA 90210</span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="phone" class="w-5 h-5 mr-3 text-soft-gold"></i>
+              <span>+1 (310) 555-0123</span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="mail" class="w-5 h-5 mr-3 text-soft-gold"></i>
+              <span>inquiries@elysian.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Social Media -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-6">Follow Us</h4>
+          <div class="flex space-x-5">
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-soft-gold hover:text-charcoal transition-all duration-300"
+              aria-label="Facebook">
+              <i data-lucide="facebook" class="w-5 h-5"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-soft-gold hover:text-charcoal transition-all duration-300"
+              aria-label="Instagram">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-soft-gold hover:text-charcoal transition-all duration-300"
+              aria-label="LinkedIn">
+              <i data-lucide="linkedin" class="w-5 h-5"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-soft-gold hover:text-charcoal transition-all duration-300"
+              aria-label="Twitter">
+              <i data-lucide="twitter" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-ivory/20 mt-16 pt-8 text-center text-sm">
+        <p>
+          © <span id="current-year"></span> Elysian Estates. All Rights Reserved. |
+          <a href="privacy-policy.html" class="hover:text-soft-gold transition-colors">Privacy Policy</a> |
+          Designed with Elegance |
+          Made by <a href="https://www.codewithfaraz.com" target="_blank"
+            class="hover:text-soft-gold transition-colors underline">CodeWithFaraz</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <a href="#top" id="scrollTopBtn" aria-label="Scroll to top">
+    <!-- SVG Progress Ring -->
+    <svg class="w-full h-full" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+      <!-- Background Circle -->
+      <circle class="stroke-charcoal/10" cx="18" cy="18" r="16" stroke-width="2" fill="none">
+      </circle>
+      <!-- Progress Circle -->
+      <circle id="progress-ring" class="stroke-soft-gold" cx="18" cy="18" r="16" stroke-width="2" fill="none"
+        stroke-linecap="round" stroke-dasharray="100.53" stroke-dashoffset="100.53"> <!-- 2 * pi * 16 -->
+      </circle>
+    </svg>
+    <!-- Icon (sits on top) -->
+    <span class="absolute text-charcoal">
+      <i data-lucide="chevron-up" class="w-6 h-6"></i>
+    </span>
+  </a>
+
+  <!-- Chatbot Toggle Button -->
+  <button id="chat-toggle-btn" aria-label="Open chat">
+    <i data-lucide="message-circle" class="w-8 h-8"></i>
+  </button>
+
+  <!-- Chatbot Window -->
+  <div id="chatbot-window">
+    <!-- Header -->
+    <div class="chatbot-header">
+      <div>
+        <h3 class="font-display text-xl font-bold">Elysian Concierge</h3>
+        <p class="text-xs text-ivory/70">How can we help you today?</p>
+      </div>
+      <button id="chatbot-close-btn" aria-label="Close chat">
+        <i data-lucide="x" class="w-6 h-6 text-ivory/70 hover:text-ivory"></i>
+      </button>
+    </div>
+
+    <!-- Messages -->
+    <div class="chatbot-messages" id="chatbot-messages">
+      <!-- Initial Bot Message -->
+      <div class="chat-message bot">
+        Welcome to Elysian Estates. Ask me about properties, our services, or for buying advice.
+        <div class="text-xs text-charcoal/60 mt-3 pt-3 border-t border-charcoal/10">
+          Need to speak to a person?
+          <a href="tel:+13105550123" class="font-semibold text-soft-gold hover:text-dark-gold">Call Us</a> or
+          <a href="mailto:inquiries@elysian.com" class="font-semibold text-soft-gold hover:text-dark-gold">Email Us</a>.
+        </div>
+      </div>
+      <!-- Dummy user message -->
+      <!-- <div class="chat-message user">
+                Hi, I'm interested in properties in Beverly Hills.
+            </div> -->
+    </div>
+
+    <!-- Input Form -->
+    <div class="chatbot-input">
+      <form id="chatbot-form">
+        <input type="text" id="chatbot-input" placeholder="Type your message..." autocomplete="off" required>
+        <button type="submit" aria-label="Send message">
+          <i data-lucide="send" class="w-5 h-5"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>

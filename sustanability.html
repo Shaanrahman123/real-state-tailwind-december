@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustanability – Elysian Estates</title>
+    <link rel="icon"
+        href="https://www.codewithfaraz.com/tools/placeholder?size=32x32&bgColor=FDFDFB&textColor=1A1A1A&text=EE"
+        type="image/png">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="top" class="antialiased">
+
+    <!-- Scroll Indicator -->
+    <div id="scroll-indicator" style="width: 0%;"></div>
+
+    <!-- Header -->
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="font-display text-3xl font-bold text-ivory tracking-wide" id="logo">
+                Elysian
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex space-x-8 items-center">
+                <a href="index.html"
+                    class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Home</a>
+                <a href="projects.html"
+                    class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Projects</a>
+                <a href="agents.html"
+                    class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Agents</a>
+                <a href="about-us.html"
+                    class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">About</a>
+                <a href="blog.html" class="text-soft-gold font-semibold nav-link-desktop">Blog</a>
+                <a href="contact.html"
+                    class="bg-ivory text-charcoal px-6 py-3 rounded-md text-sm font-semibold hover:bg-soft-gold hover:text-charcoal shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+                    id="nav-cta-desktop">
+                    Contact Us
+                </a>
+            </nav>
+
+            <!-- Placeholder for alignment -->
+            <div class="lg:hidden w-[28px] h-[36px]"></div>
+        </div>
+    </header>
+
+    <!-- Mobile Hamburger -->
+    <button id="hamburger-btn" class="lg:hidden z-[60] hamburger fixed top-5 right-6">
+        <span class="bg-ivory"></span>
+        <span class="bg-ivory"></span>
+        <span class="bg-ivory"></span>
+    </button>
+
+    <!-- Mobile Nav Overlay -->
+    <div id="nav-overlay"
+        class="nav-overlay fixed inset-0 bg-charcoal z-[55] flex flex-col items-center justify-center space-y-10">
+        <a href="index.html" class="text-ivory text-4xl font-display">Home</a>
+        <a href="projects.html" class="text-ivory text-4xl font-display">Projects</a>
+        <a href="agents.html" class="text-ivory text-4xl font-display">Agents</a>
+        <a href="about-us.html" class="text-soft-gold text-4xl font-display">About</a>
+        <a href="blog.html" class="text-ivory text-4xl font-display">Blog</a>
+        <a href="contact.html" class="text-ivory text-4xl font-display">Contact</a>
+    </div>
+
+    <main class="bg-ivory">
+
+        <!-- Hero / Breadcrumb -->
+        <section class="pt-32 pb-16 bg-charcoal text-ivory relative overflow-hidden">
+            <div class="absolute inset-0 opacity-25">
+                <img src="https://images.pexels.com/photos/3137055/pexels-photo-3137055.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    alt="City skyline" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/90 to-transparent"></div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <p class="text-sm uppercase tracking-[0.35em] text-soft-gold mb-4" data-aos="fade-right">
+                    Our Blogs
+                </p>
+                <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-4" data-aos="fade-right"
+                    data-aos-delay="80">
+                    Redefining luxury real estate.
+                </h1>
+                <p class="max-w-2xl text-ivory/80 text-lg" data-aos="fade-right" data-aos-delay="140">
+                    Elysian Estates is a curated collective of advisors, marketers, and storytellers dedicated to
+                    presenting the
+                    world’s most remarkable homes with rare precision and care.
+                </p>
+                <div class="mt-6 text-sm text-ivory/60" data-aos="fade-right" data-aos-delay="180">
+                    <a href="index.html" class="hover:text-soft-gold">Home</a>
+                    <span class="mx-2">/</span>
+                    <span class="text-soft-gold">Blogs</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Sustainability Philosophy ===== -->
+        <section class="py-24 bg-ivory">
+            <div class="container mx-auto px-6">
+
+                <!-- Section Intro -->
+                <div class="max-w-3xl mx-auto text-center mb-20" data-aos="fade-up">
+                    <span class="text-soft-gold uppercase tracking-[0.35em] text-sm">Sustainability</span>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-charcoal mt-6">
+                        Luxury With Responsibility
+                    </h2>
+                    <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
+                        At Elysian Estates, sustainability is not an afterthought — it is built into the very
+                        foundation of every space we shape.
+                    </p>
+                </div>
+
+                <!-- Two Column Philosophy -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
+
+                    <!-- Text -->
+                    <div data-aos="fade-right">
+                        <h3 class="font-display text-3xl font-bold text-charcoal mb-6">
+                            Thoughtful Design, Reduced Impact
+                        </h3>
+                        <p class="text-charcoal/70 mb-6 leading-relaxed">
+                            Our developments prioritize long-term environmental balance through passive design,
+                            intelligent material selection, and energy-efficient construction techniques.
+                        </p>
+
+                        <p class="text-charcoal/70 leading-relaxed">
+                            From reduced heat absorption to optimized daylight usage, every design decision serves
+                            both aesthetics and planetary responsibility.
+                        </p>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="relative overflow-hidden" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600"
+                            alt="Sustainable architecture" class="w-full h-[420px] object-cover">
+                    </div>
+
+                </div>
+
+                <!-- Sustainability Pillars -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-32">
+
+                    <!-- Pillar -->
+                    <div data-aos="fade-up">
+                        <div class="mb-6">
+                            <i data-lucide="sun" class="w-10 h-10 text-soft-gold"></i>
+                        </div>
+                        <h4 class="font-display text-2xl font-bold text-charcoal mb-4">
+                            Renewable Energy
+                        </h4>
+                        <p class="text-charcoal/70 leading-relaxed">
+                            Integration of solar energy systems, high-efficiency insulation, and intelligent climate
+                            control to minimize carbon footprint.
+                        </p>
+                    </div>
+
+                    <!-- Pillar -->
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div class="mb-6">
+                            <i data-lucide="recycle" class="w-10 h-10 text-soft-gold"></i>
+                        </div>
+                        <h4 class="font-display text-2xl font-bold text-charcoal mb-4">
+                            Responsible Materials
+                        </h4>
+                        <p class="text-charcoal/70 leading-relaxed">
+                            Natural stone, FSC-certified wood, recycled steel, and low-emission finishes form the
+                            core of our sustainability strategy.
+                        </p>
+                    </div>
+
+                    <!-- Pillar -->
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div class="mb-6">
+                            <i data-lucide="droplet" class="w-10 h-10 text-soft-gold"></i>
+                        </div>
+                        <h4 class="font-display text-2xl font-bold text-charcoal mb-4">
+                            Water Preservation
+                        </h4>
+                        <p class="text-charcoal/70 leading-relaxed">
+                            Rainwater harvesting, greywater recycling, and ultra-efficient plumbing systems protect
+                            one of Earth’s most vital resources.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Full-width Statement -->
+                <div class="bg-light-gray py-20 px-10 text-center" data-aos="fade-up">
+                    <h3 class="font-display text-3xl md:text-4xl font-bold text-charcoal mb-6">
+                        Building Homes That Respect Tomorrow
+                    </h3>
+                    <p class="max-w-3xl mx-auto text-charcoal/70 text-lg leading-relaxed">
+                        True luxury must endure — for those who live within it today and those who inherit the world
+                        tomorrow. Sustainability is woven into every vision we create.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-charcoal text-ivory/70 pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Column 1: Brand & Newsletter -->
+                <div>
+                    <h3 class="font-display text-3xl font-bold text-white mb-4">Elysian</h3>
+                    <p class="text-sm mb-6 max-w-xs">
+                        The new standard in luxury real estate.
+                        </S>
+                    <h4 class="text-lg font-semibold text-white mb-4">Join Our Newsletter</h4>
+                    <form class="flex">
+                        <input type="email" placeholder="Your Email"
+                            class="w-full bg-ivory/10 text-white px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-soft-gold border-none">
+                        <button
+                            class="bg-soft-gold text-charcoal px-4 py-2 rounded-r-md font-semibold hover:bg-dark-gold transition-colors">
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-soft-gold transition-colors">Home</a></li>
+                        <li><a href="property-listings.html"
+                                class="hover:text-soft-gold transition-colors">Properties</a></li>
+                        <li><a href="sustanability.html"
+                                class="hover:text-soft-gold transition-colors">Sustanability</a></li>
+                        <li><a href="corporate-social-responsibility.html"
+                                class="hover:text-soft-gold transition-colors">Corporate social Responsibility</a></li>
+                        <li><a href="about-us.html" class="hover:text-soft-gold transition-colors">About Us</a></li>
+                        <li><a href="testimonial.html" class="hover:text-soft-gold transition-colors">Testimonials</a>
+                        </li>
+                        <li><a href="blog.html" class="hover:text-soft-gold transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-soft-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Contact Us</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="w-5 h-5 mr-3 mt-1 text-soft-gold flex-shrink-0"></i>
+                            <span>123 Luxury Ave, Beverly Hills, CA 90210</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="phone" class="w-5 h-5 mr-3 text-soft-gold"></i>
+                            <span>+1 (310) 555-0123</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="w-5 h-5 mr-3 text-soft-gold"></i>
+                            <span>inquiries@elysian.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Social Media -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Follow Us</h4>
+                    <div class="flex space-x-5">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-soft-gold hover:text-charcoal transition-all duration-300"
+                            aria-label="Facebook">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-soft-gold hover:text-charcoal transition-all duration-300"
+                            aria-label="Instagram">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-soft-gold hover:text-charcoal transition-all duration-300"
+                            aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-soft-gold hover:text-charcoal transition-all duration-300"
+                            aria-label="Twitter">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-ivory/20 mt-16 pt-8 text-center text-sm">
+                <p>
+                    © <span id="current-year"></span> Elysian Estates. All Rights Reserved. |
+                    <a href="privacy-policy.html" class="hover:text-soft-gold transition-colors">Privacy Policy</a> |
+                    Designed with Elegance |
+                    Made by <a href="https://www.codewithfaraz.com" target="_blank"
+                        class="hover:text-soft-gold transition-colors underline">CodeWithFaraz</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#top" id="scrollTopBtn" aria-label="Scroll to top">
+        <!-- SVG Progress Ring -->
+        <svg class="w-full h-full" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background Circle -->
+            <circle class="stroke-charcoal/10" cx="18" cy="18" r="16" stroke-width="2" fill="none">
+            </circle>
+            <!-- Progress Circle -->
+            <circle id="progress-ring" class="stroke-soft-gold" cx="18" cy="18" r="16" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-dasharray="100.53" stroke-dashoffset="100.53"> <!-- 2 * pi * 16 -->
+            </circle>
+        </svg>
+        <!-- Icon (sits on top) -->
+        <span class="absolute text-charcoal">
+            <i data-lucide="chevron-up" class="w-6 h-6"></i>
+        </span>
+    </a>
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chat-toggle-btn" aria-label="Open chat">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </button>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot-window">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div>
+                <h3 class="font-display text-xl font-bold">Elysian Concierge</h3>
+                <p class="text-xs text-ivory/70">How can we help you today?</p>
+            </div>
+            <button id="chatbot-close-btn" aria-label="Close chat">
+                <i data-lucide="x" class="w-6 h-6 text-ivory/70 hover:text-ivory"></i>
+            </button>
+        </div>
+
+        <!-- Messages -->
+        <div class="chatbot-messages" id="chatbot-messages">
+            <!-- Initial Bot Message -->
+            <div class="chat-message bot">
+                Welcome to Elysian Estates. Ask me about properties, our services, or for buying advice.
+                <div class="text-xs text-charcoal/60 mt-3 pt-3 border-t border-charcoal/10">
+                    Need to speak to a person?
+                    <a href="tel:+13105550123" class="font-semibold text-soft-gold hover:text-dark-gold">Call Us</a> or
+                    <a href="mailto:inquiries@elysian.com"
+                        class="font-semibold text-soft-gold hover:text-dark-gold">Email Us</a>.
+                </div>
+            </div>
+            <!-- Dummy user message -->
+            <!-- <div class="chat-message user">
+                Hi, I'm interested in properties in Beverly Hills.
+            </div> -->
+        </div>
+
+        <!-- Input Form -->
+        <div class="chatbot-input">
+            <form id="chatbot-form">
+                <input type="text" id="chatbot-input" placeholder="Type your message..." autocomplete="off" required>
+                <button type="submit" aria-label="Send message">
+                    <i data-lucide="send" class="w-5 h-5"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
