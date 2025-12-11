@@ -257,6 +257,36 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const accordions = document.querySelectorAll(".accordion-btn");
+
+    accordions.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+
+        // Close other accordions
+        document.querySelectorAll(".accordion-content").forEach((item) => {
+          if (item !== content) {
+            item.style.maxHeight = null;
+            item.previousElementSibling
+              .querySelector(".accordion-icon")
+              .classList.remove("rotate-180");
+          }
+        });
+
+        // Toggle this accordion
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+
+        // Rotate icon
+        btn.querySelector(".accordion-icon").classList.toggle("rotate-180");
+      });
+    });
+  });
+
   const scrollTopBtn = document.getElementById("scrollTopBtn");
   const progressRing = document.getElementById("progress-ring");
 
