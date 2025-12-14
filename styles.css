@@ -1,5 +1,6 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+     font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background-color: #FDFDFB;
     color: #1A1A1A;
     overflow-x: hidden;
@@ -12,7 +13,13 @@ h4,
 h5,
 h6,
 .font-display {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Roboto', serif; */
+
+
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    /* font-weight: 400; */
+    /* color: #1a1a1a; */
+
 }
 
 /* --- Header Styles --- */
@@ -145,8 +152,8 @@ header.scrolled {
     width: 3.75rem;
     height: 3.75rem;
     border-radius: 9999px;
-    background-color: #1A1A1A;
-    color: #FDFDFB;
+    /* background-color: #1A1A1A; */
+    /* color: #FDFDFB; */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     z-index: 50;
     display: flex;
@@ -161,8 +168,8 @@ header.scrolled {
 }
 
 #chat-toggle-btn:hover {
-    background-color: #C0A067;
-    color: #1A1A1A;
+    /* background-color: #C0A067; */
+    /* color: #1A1A1A; */
     transform: translateY(-4px) scale(1.05);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
@@ -332,7 +339,7 @@ header.scrolled {
         pointer-events: none;
     }
 .brandSwiper {
-  padding: 30px 0; /* ✅ prevents top-bottom cutting */
+  padding: 30px 0; 
 }
 
 .brand-card {

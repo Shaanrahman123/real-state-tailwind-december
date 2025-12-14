@@ -15,9 +15,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -39,7 +37,7 @@
     <!-- Scroll Indicator -->
     <div id="scroll-indicator" style="width: 0%;"></div>
 
-    <!-- Header -->
+    <!-- ===== Header & Navbar ===== -->
     <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
         <div class="container mx-auto px-6 py-5 flex justify-between items-center">
             <!-- Logo -->
@@ -51,12 +49,47 @@
             <nav class="hidden lg:flex space-x-8 items-center">
                 <a href="index.html"
                     class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Home</a>
-                <a href="projects.html"
-                    class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Projects</a>
-                <a href="agents.html"
-                    class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Agents</a>
-                <a href="about-us.html"
-                    class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">About</a>
+                <!-- <a href="property-listings.html"
+                    class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Properties</a> -->
+                <div class="relative group">
+                    <button
+                        class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 flex items-center gap-1 nav-link-desktop">
+                        Projects
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </button>
+
+                    <div
+                        class="absolute top-full left-0 mt-4 w-56 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="projects.html"
+                            class="block px-6 py-3 text-charcoal hover:text-soft-gold">Residential</a>
+                        <a href="projects.html"
+                            class="block px-6 py-3 text-charcoal hover:text-soft-gold">Commercial</a>
+                        <a href="projects.html" class="block px-6 py-3 text-charcoal hover:text-soft-gold">Luxury
+                            Villas</a>
+                        <a href="projects.html" class="block px-6 py-3 text-charcoal hover:text-soft-gold">Plots /
+                            Land</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button
+                        class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 flex items-center gap-1 nav-link-desktop">
+                        About
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </button>
+
+                    <div
+                        class="absolute top-full left-0 mt-4 w-64 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="director-message.html"
+                            class="block px-6 py-3 text-charcoal hover:text-soft-gold">Director Message</a>
+                        <a href="vision-mission.html" class="block px-6 py-3 text-charcoal hover:text-soft-gold">Vision
+                            & Mission</a>
+                        <a href="board-of-directors.html"
+                            class="block px-6 py-3 text-charcoal hover:text-soft-gold">Board of Directors</a>
+                        <a href="leadership-teams.html"
+                            class="block px-6 py-3 text-charcoal hover:text-soft-gold">Leadership Team</a>
+                    </div>
+                </div>
                 <a href="blog.html"
                     class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Blog</a>
                 <a href="Media.html"
@@ -69,25 +102,36 @@
                 </a>
             </nav>
 
-            <!-- Placeholder for alignment -->
+            <!-- Hamburger Menu Button Placeholder -->
             <div class="lg:hidden w-[28px] h-[36px]"></div>
         </div>
     </header>
 
-    <!-- Mobile Hamburger -->
+    <!-- ===== Hamburger Menu Button ===== -->
     <button id="hamburger-btn" class="lg:hidden z-[60] hamburger fixed top-5 right-6">
         <span class="bg-ivory"></span>
         <span class="bg-ivory"></span>
         <span class="bg-ivory"></span>
     </button>
 
-    <!-- Mobile Nav Overlay -->
+    <!-- ===== Full-screen Nav Overlay ===== -->
     <div id="nav-overlay"
         class="nav-overlay fixed inset-0 bg-charcoal z-[55] flex flex-col items-center justify-center space-y-10">
         <a href="index.html" class="text-ivory text-4xl font-display">Home</a>
-        <a href="projects.html" class="text-ivory text-4xl font-display">Projects</a>
-        <a href="agents.html" class="text-ivory text-4xl font-display">Agents</a>
-        <a href="about-us.html" class="text-soft-gold text-4xl font-display">About</a>
+        <div class="text-center">
+            <p class="text-soft-gold text-sm tracking-widest mb-2">Projects</p>
+            <a href="projects.html" class="block text-ivory text-2xl">Residential</a>
+            <a href="projects.html" class="block text-ivory text-2xl">Commercial</a>
+            <a href="projects.html" class="block text-ivory text-2xl">Luxury Villas</a>
+            <a href="projects.html" class="block text-ivory text-2xl">Plots / Land</a>
+        </div>
+        <div class="text-center">
+            <p class="text-soft-gold text-sm tracking-widest mb-2">About</p>
+            <a href="director-message.html" class="block text-ivory text-2xl">Director Message</a>
+            <a href="vision-mission.html" class="block text-ivory text-2xl">Vision & Mission</a>
+            <a href="board-of-directors.html" class="block text-ivory text-2xl">Board of Directors</a>
+            <a href="leadership-teams.html" class="block text-ivory text-2xl">Leadership Team</a>
+        </div>
         <a href="blog.html" class="text-ivory text-4xl font-display">Blog</a>
         <a href="Media.html" class="text-ivory text-4xl font-display">Media</a>
         <a href="awards.html" class="text-ivory text-4xl font-display">Awards</a>

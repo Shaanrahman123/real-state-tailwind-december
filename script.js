@@ -242,13 +242,17 @@ document.addEventListener("DOMContentLoaded", function () {
   // swiper client
   new Swiper(".brandSwiper", {
     loop: true,
-    slidesPerView: "auto",
+    // slidesPerView: "auto",
     spaceBetween: 50,
-    speed: 4000,
-    allowTouchMove: false,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
+    speed: 300,
+    // allowTouchMove: false,
+    // autoplay: {
+    //   delay: 0,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".brandSwiper .swiper-button-next",
+      prevEl: ".brandSwiper .swiper-button-prev",
     },
     breakpoints: {
       320: { slidesPerView: 2 },
