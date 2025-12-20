@@ -30,6 +30,10 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
+    <!-- Plyr Video Player -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -1456,6 +1460,39 @@
 
 
     <script src="script.js"></script>
+
+
+    <script type="module">
+        import PhotoSwipeLightbox from
+            'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#gallery',
+            children: 'a',
+            pswpModule: () =>
+                import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js'),
+        });
+
+        lightbox.init();
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const players = Plyr.setup(".plyr-video", {
+                controls: [
+                    "play-large",
+                    "play",
+                    "progress",
+                    "current-time",
+                    "mute",
+                    "volume",
+                    "fullscreen"
+                ],
+                fullscreen: { enabled: true },
+                keyboard: { focused: true, global: false }
+            });
+        });
+    </script>
 </body>
 
 </html>
