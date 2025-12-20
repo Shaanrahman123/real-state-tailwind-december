@@ -11,7 +11,8 @@ tailwind.config = {
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
-        display: ["Playfair Display", "serif"],
+        display: ["Tenor sans", "serif"],
+        // tenor: ["Tenor sans", "serif"],
       },
     },
   },

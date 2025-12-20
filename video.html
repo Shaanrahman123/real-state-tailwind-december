@@ -30,6 +30,11 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Plyr Video Player -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
 </head>
 
 <body id="top" class="antialiased">
@@ -47,7 +52,8 @@
 
             <!-- Desktop Nav -->
             <nav class="hidden lg:flex space-x-8 items-center">
-                <a href="index.html" class="text-soft-gold font-semibold nav-link-desktop">Home</a>
+                <a href="index.html"
+                    class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Home</a>
                 <!-- <a href="property-listings.html"
                     class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Properties</a> -->
                 <div class="relative group">
@@ -91,8 +97,7 @@
                 </div>
                 <a href="blog.html"
                     class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Blog</a>
-                <a href="Media.html"
-                    class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Media</a>
+                <a href="Media.html" class="text-soft-gold font-semibold nav-link-desktop">Media</a>
                 <a href="awards.html"
                     class="text-ivory/80 hover:text-soft-gold transition-colors duration-300 nav-link-desktop">Awards</a>
                 <a href="contact.html"
@@ -150,7 +155,7 @@
 
             <div class="container mx-auto px-6 relative z-10">
                 <p class="text-sm uppercase tracking-[0.35em] text-soft-gold mb-4" data-aos="fade-right">
-                    Our Blogs
+                    Our Media
                 </p>
                 <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-4" data-aos="fade-right"
                     data-aos-delay="80">
@@ -164,175 +169,70 @@
                 <div class="mt-6 text-sm text-ivory/60" data-aos="fade-right" data-aos-delay="180">
                     <a href="index.html" class="hover:text-soft-gold">Home</a>
                     <span class="mx-2">/</span>
-                    <span class="text-soft-gold">Blogs</span>
+                    <span class="text-soft-gold">Media</span>
                 </div>
             </div>
         </section>
 
-        <!-- ===== Luxury Blog Details Section ===== -->
+
         <section class="py-24 bg-ivory">
             <div class="container mx-auto px-6">
 
-                <div class="grid grid-cols-1 lg:grid-cols-[1fr,340px] gap-16 max-w-7xl mx-auto">
-
-                    <div>
-                        <!-- Category -->
-                        <div class="text-center mb-6" data-aos="fade-up">
-                            <span class="text-soft-gold uppercase tracking-[0.3em] text-sm">Architecture</span>
-                        </div>
-
-                        <!-- Title -->
-                        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal text-center mb-6 leading-tight"
-                            data-aos="fade-up" data-aos-delay="100">
-                            The New Language of Modern Luxury Homes
-                        </h1>
-
-                        <!-- Meta -->
-                        <div class="flex justify-center items-center space-x-6 text-sm text-charcoal/60 mb-12"
-                            data-aos="fade-up" data-aos-delay="150">
-                            <span>By Elysian Editorial</span>
-                            <span>•</span>
-                            <span>March 2025</span>
-                            <span>•</span>
-                            <span>6 min read</span>
-                        </div>
-
-                        <!-- Featured Image -->
-                        <div class="mb-16 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000"
-                                class="w-full h-[480px] object-cover" alt="Luxury Architecture">
-                        </div>
-
-                        <!-- Article Content -->
-                        <article class="prose prose-lg max-w-none">
-
-                            <p class="text-xl text-charcoal/80 mb-10 leading-relaxed">
-                                Luxury today is no longer defined by excess — it is defined by clarity, restraint, and
-                                intention.
-                                The world’s most refined homes now speak a quieter architectural language.
-                            </p>
-
-                            <h2 class="font-display text-3xl font-bold text-charcoal mt-16 mb-6">
-                                Silence as a Design Principle
-                            </h2>
-
-                            <p class="text-charcoal/70 mb-6">
-                                Modern estates no longer compete for attention through ornament. Instead, designers are
-                                now
-                                embracing
-                                silence — long horizontal lines, soft light, and material honesty.
-                            </p>
-
-                            <p class="text-charcoal/70 mb-6">
-                                Glass dissolves boundaries, stone anchors emotion, and space itself becomes the central
-                                luxury.
-                            </p>
-
-                            <blockquote class="border-l-4 border-soft-gold pl-6 italic text-charcoal my-12">
-                                “True luxury begins where noise ends.”
-                            </blockquote>
-
-                            <h2 class="font-display text-3xl font-bold text-charcoal mt-16 mb-6">
-                                Architecture That Breathes
-                            </h2>
-
-                            <p class="text-charcoal/70 mb-6">
-                                The integration of landscape and structure defines elite residences in 2025. Homes now
-                                open
-                                to sky,
-                                air, and water with seamless transitions.
-                            </p>
-
-                            <p class="text-charcoal/70 mb-6">
-                                This architectural evolution reflects a shift in wealth psychology — a preference for
-                                privacy over
-                                performance, depth over display.
-                            </p>
-
-                        </article>
-
-                        <!-- Author Box -->
-                        <div class="border-t border-charcoal/10 mt-20 pt-10 flex items-center space-x-6">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg"
-                                class="w-16 h-16 rounded-full object-cover" alt="Author">
-
-                            <div>
-                                <h4 class="font-semibold text-charcoal">Elysian Editorial</h4>
-                                <p class="text-charcoal/60 text-sm">
-                                    Curated insights into architecture, investment strategy, and refined living.
-                                </p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <!-- ===== Blog Sidebar ===== -->
-                    <aside class="hidden lg:block">
-
-                        <div class="sticky top-32">
-
-                            <!-- Sidebar Heading -->
-                            <h4 class="font-display text-xl font-semibold text-charcoal mb-8">
-                                More Reads
-                            </h4>
-
-                            <!-- Blog List -->
-                            <div class="space-y-8">
-
-                                <!-- Blog Item -->
-                                <a href="blog-details.html" class="group flex gap-4">
-                                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=400"
-                                        class="w-20 h-20 object-cover rounded-lg flex-shrink-0" alt="Architecture">
-                                    <div>
-                                        <p class="text-soft-gold uppercase text-xs tracking-widest mb-1">
-                                            Architecture
-                                        </p>
-                                        <h5
-                                            class="font-medium text-charcoal leading-snug group-hover:text-soft-gold transition">
-                                            Minimalism Is the New Expression of Wealth
-                                        </h5>
-                                    </div>
-                                </a>
-
-                                <!-- Blog Item -->
-                                <a href="blog-details.html" class="group flex gap-4">
-                                    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=400"
-                                        class="w-20 h-20 object-cover rounded-lg flex-shrink-0" alt="Interiors">
-                                    <div>
-                                        <p class="text-soft-gold uppercase text-xs tracking-widest mb-1">
-                                            Interiors
-                                        </p>
-                                        <h5
-                                            class="font-medium text-charcoal leading-snug group-hover:text-soft-gold transition">
-                                            Designing Homes That Feel Calm, Not Loud
-                                        </h5>
-                                    </div>
-                                </a>
-
-                                <!-- Blog Item -->
-                                <a href="blog-details.html" class="group flex gap-4">
-                                    <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?q=80&w=400"
-                                        class="w-20 h-20 object-cover rounded-lg flex-shrink-0" alt="Investment">
-                                    <div>
-                                        <p class="text-soft-gold uppercase text-xs tracking-widest mb-1">
-                                            Investment
-                                        </p>
-                                        <h5
-                                            class="font-medium text-charcoal leading-snug group-hover:text-soft-gold transition">
-                                            Why Certain Properties Outperform Time
-                                        </h5>
-                                    </div>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </aside>
-
-
+                <!-- Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                    <span class="text-soft-gold tracking-widest uppercase text-sm">
+                        Our Media
+                    </span>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-charcoal mt-4">
+                        Stories in Motion
+                    </h2>
+                    <p class="text-charcoal/70 mt-4">
+                        Curated films, walkthroughs, and cinematic presentations of our developments.
+                    </p>
                 </div>
 
+                <!-- Video Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Video Card -->
+                    <div class="rounded-sm overflow-hidden " data-aos="fade-up">
+                        <video class="plyr-video" playsinline controls
+                            poster="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg">
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                        </video>
+                        <div class="p-5 bg-white">
+                            <h4 class="text-charcoal font-semibold text-lg">
+                                Luxury Living Walkthrough
+                            </h4>
+                        </div>
+                    </div>
+
+
+
+                    <div class="rounded-sm overflow-hidden " data-aos="fade-up" data-aos-delay="160">
+                        <video class="plyr-video" playsinline controls
+                            poster="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg">
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                        </video>
+                        <div class="p-5 bg-white">
+                            <h4 class="text-charcoal font-semibold text-lg">
+                                Architectural Excellence
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="rounded-sm overflow-hidden " data-aos="fade-up" data-aos-delay="160">
+                        <video class="plyr-video" playsinline controls
+                            poster="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg">
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                        </video>
+                        <div class="p-5 bg-white">
+                            <h4 class="text-charcoal font-semibold text-lg">
+                                Architectural Excellence
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -464,6 +364,26 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const players = Plyr.setup(".plyr-video", {
+                controls: [
+                    "play-large",
+                    "play",
+                    "progress",
+                    "current-time",
+                    "mute",
+                    "volume",
+                    "fullscreen"
+                ],
+                fullscreen: { enabled: true },
+                keyboard: { focused: true, global: false }
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

@@ -48,6 +48,18 @@ header.scrolled {
     letter-spacing: 0.1em;
 }
 
+
+.plyr__control--overlaid{
+    background: #C0A067 !important;
+}
+
+.plyr--full-ui input[type=range]
+
+ {
+    color: #C0A067 !important;
+    background: transparent !important;
+}
+
 /* --- Hamburger Menu Icon --- */
 .hamburger span {
     display: block;
